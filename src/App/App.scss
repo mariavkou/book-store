@@ -1,0 +1,52 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    font-size: 12pt;
+    color: #1f2429;
+}
+.app {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 576px) {  
+    .app {
+        font-size: 8pt;
+
+        .store {
+            padding: 10px;
+
+            .icon {
+                width: 50px !important;
+                height: 50px !important;
+                min-width: 50px !important;
+                padding: 10px !important;
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%; 
+                }
+            }
+
+            .title {
+                font-size: 12pt !important;
+            }
+            .data {
+                th {
+                    font-size: 10pt !important;
+                }
+            }
+            .country {
+                height: 20px !important;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 360px) { 
+    .rating {
+        display: none !important;
+    }
+}
